@@ -49,7 +49,7 @@ Please, take into consideration that this is just a practical project app.
 - Track and view quiz results and progress.
 
 ## Video
-[![Video Thumbnail](https://user-images.githubusercontent.com/116954772/257047330-c87f3f23-ee5d-4e39-9ada-e93938da8873.png)]([https://www.youtube.com/watch?v=your_youtube_video_id](https://www.youtube.com/watch?v=UF9qaoK_PSM))
+[![Video Thumbnail](https://user-images.githubusercontent.com/116954772/257047330-c87f3f23-ee5d-4e39-9ada-e93938da8873.png)](https://www.youtube.com/watch?v=UF9qaoK_PSM)
 
 ## Technologies Used
 - Kotlin programming language
