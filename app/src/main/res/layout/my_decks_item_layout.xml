@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/shapeTopSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/deck_top_part" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutCover"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/davys_gray"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/shapeRightSide"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shapeTopSide"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/tvDeckTitleMyDecksItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/text_deck_title"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:maxHeight="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvRandFlashcard1MyDecksItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/placeholder_random_flashcard_my_deck_1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="7sp"
+                app:layout_constraintBottom_toTopOf="@+id/tvRandFlashcard2MyDecksItem"
+                app:layout_constraintStart_toStartOf="@+id/tvRandFlashcard2MyDecksItem"
+                app:layout_constraintTop_toBottomOf="@+id/tvDeckTitleMyDecksItem"
+                app:layout_constraintVertical_bias="0.3"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/tvRandFlashcard2MyDecksItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/placeholder_random_flashcard_my_deck_2"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="7sp"
+                app:layout_constraintBottom_toTopOf="@+id/tvRandFlashcard3MyDecksItem"
+                app:layout_constraintStart_toStartOf="@+id/tvRandFlashcard3MyDecksItem"
+                app:layout_constraintTop_toBottomOf="@+id/tvRandFlashcard1MyDecksItem" />
+
+            <TextView
+                android:id="@+id/tvRandFlashcard3MyDecksItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/placeholder_random_flashcard_my_deck_3"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="7sp"
+                app:layout_constraintBottom_toTopOf="@+id/tvRandFlashcard4MyDecksItem"
+                app:layout_constraintStart_toStartOf="@+id/tvRandFlashcard4MyDecksItem"
+                app:layout_constraintTop_toBottomOf="@+id/tvRandFlashcard2MyDecksItem" />
+
+            <TextView
+                android:id="@+id/tvRandFlashcard4MyDecksItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/placeholder_random_flashcard_my_deck_4"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="7sp"
+                app:layout_constraintBottom_toTopOf="@+id/tvRandFlashcard5MyDecksItem"
+                app:layout_constraintStart_toStartOf="@+id/tvRandFlashcard5MyDecksItem"
+                app:layout_constraintTop_toBottomOf="@+id/tvRandFlashcard3MyDecksItem" />
+
+            <TextView
+                android:id="@+id/tvRandFlashcard5MyDecksItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/placeholder_random_flashcard_my_deck_5"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="7sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRandFlashcard4MyDecksItem" />
+
+            <TextView
+                android:id="@+id/tvRandFlashcardDotsMyDecksItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/placeholder_random_flashcard_dots_my_deck"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRandFlashcard5MyDecksItem"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvTotalCardsMyDecksItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/placeholder_random_flashcard_total_cards_my_deck"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="7sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivNonFavoriteIconMyDecksItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="6dp"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_favorite_white_no_fill" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/shapeRightSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/deck_right_side" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="9dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <ImageView
+            android:id="@+id/ivGoEditMyDecksItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_go_edit_gray" />
+
+        <ImageView
+            android:id="@+id/ivGoDeleteMyDecksItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_go_delete_gray" />
+
+        <ImageView
+            android:id="@+id/ivGoDetailsMyDecksItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_go_details_gray" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

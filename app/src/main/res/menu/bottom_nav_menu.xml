@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home_menu_item" />
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search_menu_item" />
+    <item
+        android:id="@+id/favoritesFragment"
+        android:icon="@drawable/ic_favourites"
+        android:title="@string/favourites_menu_item" />
+    <item
+        android:id="@+id/studyModeFragment"
+        android:icon="@drawable/ic_study"
+        android:title="@string/study_menu_item" />
+    <item
+        android:id="@+id/quizModeFragment"
+        android:icon="@drawable/ic_quiz"
+        android:title="@string/quiz_menu_item" />
+</menu>

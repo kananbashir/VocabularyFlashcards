@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.main.QuizModeFragment">
+
+    <TextView
+        android:id="@+id/tvQuizModeFrag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="@string/text_quiz_mode"
+        android:textAlignment="center"
+        android:textColor="@color/davys_gray"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/tvRandomSelectionStudyModeFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="@string/text_random_selection"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rvQuizFrag" />
+
+    <RadioGroup
+        android:id="@+id/rgQuizModeFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuizModeFrag"
+        app:layout_constraintVertical_bias="0.03">
+
+        <RadioButton
+            android:id="@+id/rbCustomSelectionQuizModeFrag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_button"
+            android:button="@null"
+            android:checked="true"
+            android:fontFamily="@font/comfortaa_bold"
+            android:includeFontPadding="false"
+            android:minHeight="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/text_custom_selection"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_radio_button_text"
+            android:textSize="9sp"
+            tools:ignore="SmallSp,TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/rbRandomSelectionQuizModeFrag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_button"
+            android:button="@null"
+            android:fontFamily="@font/comfortaa_bold"
+            android:includeFontPadding="false"
+            android:minHeight="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/text_random_selection"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_radio_button_text"
+            android:textSize="9sp"
+            tools:ignore="SmallSp,TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/ivFilterIconQuizModeFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/cont_desc_filter"
+        android:padding="15dp"
+        android:src="@drawable/ic_filter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgQuizModeFrag"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvQuizFrag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/anti_flash_white_bg"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btGoQuizQuizModeFrag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFilterIconQuizModeFrag" />
+
+    <Button
+        android:id="@+id/btGoQuizQuizModeFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/davys_gray"
+        android:fontFamily="@font/comfortaa_bold"
+        android:includeFontPadding="false"
+        android:paddingBottom="3dp"
+        android:text="@string/button_go_quiz"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFilterOptionQuizModeFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa_bold"
+        android:includeFontPadding="false"
+        android:text="@string/text_filter_newest_first"
+        android:textColor="@color/davys_gray"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFilterIconQuizModeFrag"
+        app:layout_constraintEnd_toStartOf="@+id/ivFilterIconQuizModeFrag"
+        app:layout_constraintTop_toTopOf="@+id/ivFilterIconQuizModeFrag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

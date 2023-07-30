@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.other.CreateFragment">
+
+    <TextView
+        android:id="@+id/tvCreateNewDeckCreateFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="@string/text_create_new_deck"
+        android:textColor="@color/davys_gray"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <EditText
+        android:id="@+id/inputDeckTitleCreateFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints=""
+        android:background="@drawable/text_input_bkg"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_bold"
+        android:hint="@string/hint_deck_title"
+        android:includeFontPadding="false"
+        android:inputType="text"
+        android:maxLength="45"
+        android:minHeight="48dp"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/davys_gray"
+        android:textColorHint="@color/silver_gray_hint"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInputInfo1"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <TextView
+        android:id="@+id/tvInputInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="@string/text_allowed_characters"
+        android:textColor="@color/davys_gray"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreateNewDeckCreateFrag"
+        app:layout_constraintVertical_bias="0.02"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/tvInputInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="@string/text_allowed_count_of_layout_column"
+        android:textColor="@color/davys_gray"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDeckTitleCreateFrag"
+        app:layout_constraintVertical_bias="0.04"
+        tools:ignore="SmallSp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="50dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInputInfo2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/parentContainerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/itemEditFrag"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="6.5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6.5"
+                    android:background="@drawable/new_item_background"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvNumberEditFrag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="15dp"
+                                android:fontFamily="@font/comfortaa_bold"
+                                android:text="@string/text_number_first"
+                                android:textColor="@color/davys_gray"
+                                android:textSize="23sp" />
+
+                            <EditText
+                                android:id="@+id/inputWordEditFrag"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autofillHints=""
+                                android:background="@drawable/text_input_bkg"
+                                android:ems="10"
+                                android:fontFamily="@font/comfortaa_bold"
+                                android:hint="@string/text_word"
+                                android:includeFontPadding="false"
+                                android:inputType="text"
+                                android:minHeight="48dp"
+                                android:paddingStart="20dp"
+                                android:paddingTop="15dp"
+                                android:paddingEnd="20dp"
+                                android:paddingBottom="15dp"
+                                android:textColor="@color/davys_gray"
+                                android:textColorHint="@color/silver_gray_hint"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvInputInfo1"
+                                app:layout_constraintVertical_bias="0.004" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:minHeight="100dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/inputMeaningEditFrag"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:autofillHints=""
+                                android:background="@drawable/text_input_bkg"
+                                android:ems="10"
+                                android:fontFamily="@font/comfortaa_bold"
+                                android:gravity="top|left"
+                                android:hint="@string/text_meaning"
+                                android:includeFontPadding="false"
+                                android:inputType="textMultiLine"
+                                android:minHeight="48dp"
+                                android:paddingStart="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="15dp"
+                                android:textColor="@color/davys_gray"
+                                android:textColorHint="@color/silver_gray_hint"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvInputInfo1"
+                                app:layout_constraintVertical_bias="0.004" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/ivAddNewCreateFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/selector_button_add_new"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/divider_gray"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvTotalAddedFlashcardsCreateFrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="@string/placeholder_total_added_column_2"
+            android:textAlignment="center"
+            android:textColor="@color/davys_gray"
+            android:textSize="8sp"
+            tools:ignore="SmallSp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:paddingBottom="15dp">
+
+            <Button
+                android:id="@+id/btCreateCreateFrag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray_non_clickable_button"
+                android:clickable="false"
+                android:fontFamily="@font/comfortaa_bold"
+                android:includeFontPadding="false"
+                android:paddingBottom="3dp"
+                android:text="@string/button_create"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btDiscardCreateFrag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/davys_gray"
+                android:fontFamily="@font/comfortaa_bold"
+                android:includeFontPadding="false"
+                android:paddingBottom="3dp"
+                android:text="@string/button_discard"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

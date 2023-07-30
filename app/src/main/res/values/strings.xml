@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">Vocabulary Flashcards</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="text_signin">Sign in</string>
+    <string name="text_signup">Sign up</string>
+    <string name="text_home">Home</string>
+    <string name="text_my_decks">My decks (0)</string>
+    <string name="text_all_favorites">All favourite decks (0)</string>
+    <string name="text_all_flashcards">All flashcards (0)</string>
+    <string name="text_marked_flashcards">Marked flashcards (0)</string>
+    <string name="text_last_quiz_results">Last quiz results (0)</string>
+    <string name="text_search_in_decks">Search in decks</string>
+    <string name="text_search_in_favorites">Search in favorites</string>
+    <string name="text_search_in_flashcards">Search in flashcards</string>
+    <string name="text_study_mode">To start new study session please select one or more decks</string>
+    <string name="text_quiz_mode">To start new quiz session please select one or more decks</string>
+    <string name="text_custom_selection">Custom selection</string>
+    <string name="text_random_selection">Random selection</string>
+    <string name="text_next">Next</string>
+    <string name="text_previous">Previous</string>
+    <string name="text_results">Results</string>
+    <string name="text_selected_flashcards">Selected flashcards</string>
+    <string name="text_no">№</string>
+    <string name="text_flashcard">Flashcard</string>
+    <string name="text_your_answer">Your answer</string>
+    <string name="text_correct_or_wrong">Correct\n-\nWrong</string>
+    <string name="text_create_new_deck">Create new deck</string>
+    <string name="text_allowed_characters">Only 45 characters allowed</string>
+    <string name="text_allowed_count_of_layout_column">Add words and their meanings (min 10)</string>
+    <string name="text_number_first">1.</string>
+    <string name="text_deck_title">Deck title</string>
+    <string name="text_word">Word</string>
+    <string name="text_meaning">Meaning (explanation)</string>
+    <string name="text_filter_newest_first">Newest first</string>
+    <string name="text_filter_oldest_first">Oldest first</string>
+    <string name="text_filter_favourites_first">Favourites first</string>
+    <string name="text_front_side">Front side of the text</string>
+    <string name="text_back_side">Back side of the text</string>
+    <string name="text_vocab_flashcard">Vocabulary\nflashcard</string>
+    <string name="text_question">Question</string>
+
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_search">Search</string>
+    <string name="hint_deck_title">Deck title</string>
+    <string name="hint_word">Word</string>
+    <string name="hint_meaning">Meaning (explanation)</string>
+
+    <string name="button_signin">SIGN IN</string>
+    <string name="button_signup">SIGN UP</string>
+    <string name="button_addphoto">ADD PHOTO</string>
+    <string name="button_study">STUDY</string>
+    <string name="button_go_study">GO STUDY</string>
+    <string name="button_go_quiz">GO QUIZ</string>
+    <string name="button_finish">FINISH</string>
+    <string name="button_start">START</string>
+    <string name="button_cancel">CANCEL</string>
+    <string name="button_create">CREATE</string>
+    <string name="button_discard">DISCARD</string>
+    <string name="button_save">SAVE</string>
+
+    <string name="cont_desc_hint_isoff">Hint icon - is off</string>
+    <string name="cont_desc_hint_ison">Hint icon - is on</string>
+    <string name="cont_desc_nav_arrow">Navigation arrow to other fragments</string>
+    <string name="cont_desc_down_arrow">Down arrow to demonstrate the position of recycler view</string>
+    <string name="cont_desc_create_new_deck">Button for creating new deck</string>
+    <string name="cont_desc_filter">Filter options icon</string>
+    <string name="cont_timer">Timer icon</string>
+    <string name="cont_progress">Progress icon</string>
+    <string name="cont_dot">Dot icon</string>
+    <string name="cont_marked_or_non_marked">An icon shows whether a flashcard is marked or not</string>
+    <string name="cont_flip">Flip icon</string>
+    <string name="cont_previous_study">To return back to the previous flashcard in Study mode</string>
+    <string name="cont_next_study">To go to the next flashcard in Study mode</string>
+    <string name="cont_calendar">Calendar icon to show date</string>
+    <string name="cont_clock">Clock icon to show used time</string>
+    <string name="cont_flashcards">Flashcard icon to show all flashcards has been used</string>
+    <string name="cont_decks">Decks icon to show all decks has been used</string>
+    <string name="cont_marked">Marked icon to show all marked flashcards</string>
+
+    <string name="placeholder_total_search_results">Total 0 results found</string>
+    <string name="placeholder_timer">00:00:00</string>
+    <string name="placeholder_progress">0/0</string>
+    <string name="placeholder_date">dd/mm/yyyy</string>
+    <string name="placeholder_spent_time">00:00:00</string>
+    <string name="placeholder_used_flashcards">Total 0 flashcards</string>
+    <string name="placeholder_used_decks">Deck 1\nDeck 2</string>
+    <string name="placeholder_marked_flashcards">Marked flashcard 1\nMarked flashcard 2</string>
+    <string name="placeholder_explanation_flashcard">FLASHCARD\n(EXPLANATION)</string>
+    <string name="placeholder_answer1">Answer 1</string>
+    <string name="placeholder_answer2">Answer 2</string>
+    <string name="placeholder_answer3">Answer 3</string>
+    <string name="placeholder_answer4">Answer 4</string>
+    <string name="placeholder_right_answers">0 right answers</string>
+    <string name="placeholder_right_answers_2">0 right ans.</string>
+    <string name="placeholder_wrong_answers">0 wrong answers</string>
+    <string name="placeholder_wrong_answers_2">0 wrong ans.</string>
+    <string name="placeholder_not_answered">0 not answered</string>
+    <string name="placeholder_total_added_column">Total 0 flashcards added</string>
+    <string name="placeholder_total_added_column_2">Total 1 flashcards added</string>
+    <string name="placeholder_edit_deck">Edit Deck title</string>
+    <string name="placeholder_deck_title">Deck title</string>
+    <string name="placeholder_total_flashcards">Total number of flashcards (0)</string>
+    <string name="placeholder_random_flashcard_my_deck_1">Random flashcard 1</string>
+    <string name="placeholder_random_flashcard_my_deck_2">Random flashcard 2</string>
+    <string name="placeholder_random_flashcard_my_deck_3">Random flashcard 3</string>
+    <string name="placeholder_random_flashcard_my_deck_4">Random flashcard 4</string>
+    <string name="placeholder_random_flashcard_my_deck_5">Random flashcard 5</string>
+    <string name="placeholder_random_flashcard_my_deck_6">Random flashcard 6</string>
+    <string name="placeholder_random_flashcard_dots_my_deck">. . . </string>
+    <string name="placeholder_random_flashcard_total_cards_my_deck">0 cards</string>
+    <string name="placeholder_flashcard">flashcard</string>
+    <string name="placeholder_marked_flashcard">marked flashcard</string>
+    <string name="placeholder_decks_and_flashcards">0 decks / 0 flashcards</string>
+    <string name="placeholder_decks_and_cards">Deck title - 0 cards</string>
+    <string name="placeholder_quiz_result_answer">Answer</string>
+    <string name="placeholder_quiz_result_correct">Correct</string>
+    <string name="placeholder_details_meaning">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="home_menu_item">Home</string>
+    <string name="search_menu_item">Search</string>
+    <string name="favourites_menu_item">Favourites</string>
+    <string name="study_menu_item">Study</string>
+    <string name="quiz_menu_item">Quiz</string>
+
+    <string-array name="filter_options">
+        <item>Newest first</item>
+        <item>Oldest first</item>
+        <item>Favourites first</item>
+    </string-array>
+</resources>
