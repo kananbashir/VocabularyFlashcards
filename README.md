@@ -48,18 +48,18 @@ Please, take into consideration that this is just a practical project app.
 - Game mode for a fun and engaging learning experience.
 - Track and view quiz results and progress.
 
-## Video
+## Video (click to navigate Youtube)
 [![Video Thumbnail](https://user-images.githubusercontent.com/116954772/257047330-c87f3f23-ee5d-4e39-9ada-e93938da8873.png)](https://www.youtube.com/watch?v=UF9qaoK_PSM)
 
 ## Technologies Used
 - Kotlin programming language
 - Android SDK
-- Android Architecture Components (ViewModel, LiveData)
+- Android Architecture Components (ViewModel, LiveData), MVVM architecture
 - Room Database for data persistence
 - RecyclerView for displaying vocabulary lists and quiz questions
 - Gson library for JSON serialization/deserialization
 - Animation
-- Glide library for image loading (it didn't work with different fragments)
+- Glide library for image loading
 
 ## Dependencies
 - AndroidX
